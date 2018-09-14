@@ -1,0 +1,23 @@
+body {
+    background-color: #888;
+}
+
+#sotd {
+    width: 100%;
+    height: 600px;
+    background:#ccc;
+}
+
+#sotd img {
+    width: 100%;
+    height: 100%;
+}
+
+#sotd-screenshots img {
+    width: 100%;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
