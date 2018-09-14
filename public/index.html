@@ -13,7 +13,7 @@
 <body>
     <!-- Navbar-Component -->
     <section>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="html/register.html">Register</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,12 +58,27 @@
         <img src="img/header.jpg" alt="placeholder">
       </div>
 
-      <div class="media container w-75">
-          <img class="mr-3" src="img/angular.png" alt="winner-logo">
-          <div class="media-body">
-            <h5 class="mt-0">winner overview</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- score section -->
+            <div class="parameter w-50 p-4 mb-1">Design</div>
+            <div class="parameter w-50 p-4 mb-1">Usability</div>
+            <div class="parameter w-50 p-4 mb-1">Functionality</div>
+            <div class="parameter w-50 p-4 mb-1">overall</div>
           </div>
+  
+          <div class="col-md-6">
+            <div class="media">
+              <img class="mr-3" src="img/angular.png" alt="winner-logo">
+              <div class="media-body">
+                <h5 class="mt-0">winner overview</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <span><i></i></span> <!-- here goes heart  -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -87,8 +102,8 @@
 
     <!-- Nominees section -->
     <section id="nominees" class="container">
-      <h3 class="mb-4 text-center">Nominees and Honorable mentions</h3>
-      <hr class="w-50 mb-4">
+      <h3 class="mb-4 text-left">Nominees and Honorable mentions</h3>
+      <hr class="w-25 mb-4">
       <div class="row mb-5">
         <div class="col-md-4 col-sm-12">
             <div class="card">
@@ -158,9 +173,10 @@
 
     <section id="footer">
       <div class="container">
-          <ul class="nav justify-content-center nav-pills py-5">
+        
+          <ul class="nav justify-content-center nav-pills nav-fill py-5">
               <li class="navitem">
-                <a class="nav-link" href="#">Register</a>
+                <a class="nav-link active" href="#">Register</a>
               </li>
               <li class="navitem">
                 <a class="nav-link" href="#">Submit</a>
@@ -174,7 +190,8 @@
               <li class="navitem">
                 <a class="nav-link" href="#">Committee</a>
               </li>
-            </ul>
+          </ul>
+
             <div class="row py-5 footer-ancle">
               <div class="col-md-6 col-sm-12">
                 copyright 2018 
@@ -185,7 +202,6 @@
             </div>
       </div>
     </section>
-
       <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="../node_modules/popper.js/dist/popper.min.js"></script>
       <script src="js/main.js"></script>

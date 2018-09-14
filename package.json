@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile":"node-sass public/sass/main.scss public/css/main.css -w"
   },
   "author": "islam",
   "license": "ISC",
@@ -12,6 +12,5 @@
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4"
-  },
-  "devDependencies": {}
+  }
 }
